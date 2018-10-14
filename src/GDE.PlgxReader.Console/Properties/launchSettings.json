@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "GDE.PlgxReader.Console": {
-      "commandName": "Project",
-      "commandLineArgs": "\"E:\\Dale\\Repos\\KeepassRunAsPlugin\\publish.plgx\""
-    }
-  }
-}
