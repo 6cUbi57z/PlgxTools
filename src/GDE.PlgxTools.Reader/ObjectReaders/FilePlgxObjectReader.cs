@@ -38,8 +38,8 @@ namespace GDE.PlgxTools.Reader.ObjectReaders
                 case (ushort)PlgxFileObjectType.Path:
                     return new FilePathPlgxObject(data);
 
-                //case (ushort)PlgxFileObjectType.Data:
-                //    throw new NotImplementedException();
+                case (ushort)PlgxFileObjectType.Data:
+                    return new FileContentsPlgxObject(data);
 
                 default:
                     return new RawPlgxObject(data);
