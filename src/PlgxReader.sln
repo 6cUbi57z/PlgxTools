@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GDE.ConsoleHelper", "GDE.Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GDE.PlgxTools.RawPluginInfo", "GDE.PlgxTools.RawPluginInfo\GDE.PlgxTools.RawPluginInfo.csproj", "{A4118B5E-9968-40FA-89EF-5C696E4FECE2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GDE.PlgxTools.PluginInfo", "GDE.PlgxTools.PluginInfo\GDE.PlgxTools.PluginInfo.csproj", "{462F9674-D406-40C0-BD48-F836E943EA21}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{A4118B5E-9968-40FA-89EF-5C696E4FECE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4118B5E-9968-40FA-89EF-5C696E4FECE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4118B5E-9968-40FA-89EF-5C696E4FECE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{462F9674-D406-40C0-BD48-F836E943EA21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{462F9674-D406-40C0-BD48-F836E943EA21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{462F9674-D406-40C0-BD48-F836E943EA21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{462F9674-D406-40C0-BD48-F836E943EA21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +59,7 @@ Global
 		{DB3F2178-50EB-4BFB-AF03-98E80A5FFFAB} = {09C3A9F4-8B4E-4C03-8F96-EACE992CD388}
 		{3C97DA90-4989-4C72-9483-BCAC012CB048} = {09C3A9F4-8B4E-4C03-8F96-EACE992CD388}
 		{A4118B5E-9968-40FA-89EF-5C696E4FECE2} = {B7ABFAD5-8164-4EA2-830C-E9F59C06D094}
+		{462F9674-D406-40C0-BD48-F836E943EA21} = {B7ABFAD5-8164-4EA2-830C-E9F59C06D094}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F9F49C6A-D6E7-4EE8-A393-551196D6F7FC}
