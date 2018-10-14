@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using GDE.PlgxReader.PlgxObjects;
+using GDE.PlgxReader.PlgxObjects.Primitive;
 
 namespace GDE.PlgxReader.PlgxObjectReaders
 {
@@ -28,8 +29,8 @@ namespace GDE.PlgxReader.PlgxObjectReaders
                     this.endOfStream = true;
                     return null;
 
-                //case (ushort)PlgxObjectType.FileUuid:
-                //    throw new NotImplementedException();
+                case (ushort)PlgxObjectType.FileUuid:
+                    return new UuidPlgxObject(data);
 
                 case (ushort)PlgxObjectType.BaseFileName:
                     return new BaseFileNamePlgxObject(data);
@@ -40,20 +41,20 @@ namespace GDE.PlgxReader.PlgxObjectReaders
                 case (ushort)PlgxObjectType.GeneratorName:
                     return new GeneratorNamePlgxObject(data);
 
-                //case (ushort)PlgxObjectType.GeneratorVersion:
-                //    throw new NotImplementedException();
+                case (ushort)PlgxObjectType.GeneratorVersion:
+                    return new GeneratorVersionPlgxObject(data);
 
-                //case (ushort)PlgxObjectType.PrereqKP:
-                //    throw new NotImplementedException();
+                case (ushort)PlgxObjectType.PrereqKP:
+                    return new KeePassVersionRequirementPlgxObject(data);
 
-                //case (ushort)PlgxObjectType.PrereqNet:
-                //    throw new NotImplementedException();
+                case (ushort)PlgxObjectType.PrereqNet:
+                    return new DotNetVersionRequirementPlgxObject(data);
 
                 case (ushort)PlgxObjectType.PrereqOS:
                     return new OperatingSystemRequirementPlgxObject(data);
 
-                //case (ushort)PlgxObjectType.PrereqPtr:
-                //    throw new NotImplementedException();
+                case (ushort)PlgxObjectType.PrereqPtr:
+                    return new PointerSizeRequirementPlgxObject(data);
 
                 case (ushort)PlgxObjectType.BuildPre:
                     return new PreBuildPlgxObject(data);
@@ -71,7 +72,7 @@ namespace GDE.PlgxReader.PlgxObjectReaders
                     return new EndContentPlgxObject();
 
                 default:
-                    return new UnknownPlgxObject(data);
+                    return new RawPlgxObject(data);
             }
         }
     }

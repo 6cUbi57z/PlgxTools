@@ -1,6 +1,8 @@
-﻿namespace GDE.PlgxReader.PlgxObjects
+﻿using GDE.PlgxReader.PlgxObjects.Primitive;
+
+namespace GDE.PlgxReader.PlgxObjects
 {
-    public class GeneratorVersionPlgxObject : UnknownPlgxObject
+    public class GeneratorVersionPlgxObject : UInt64PlgxObject
     {
         internal GeneratorVersionPlgxObject(byte[] data) : base(data)
         {

@@ -2,6 +2,7 @@
 using System.IO;
 using GDE.PlgxReader.PlgxObjects;
 using GDE.PlgxReader.PlgxObjects.FileObjects;
+using GDE.PlgxReader.PlgxObjects.Primitive;
 
 namespace GDE.PlgxReader.PlgxObjectReaders
 {
@@ -36,7 +37,7 @@ namespace GDE.PlgxReader.PlgxObjectReaders
                 //    throw new NotImplementedException();
 
                 default:
-                    return new UnknownPlgxObject(data);
+                    return new RawPlgxObject(data);
             }
         }
     }

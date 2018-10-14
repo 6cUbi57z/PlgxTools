@@ -2,7 +2,7 @@
 
 namespace GDE.PlgxReader.PlgxObjects.Primitive
 {
-    public class StringUtf8PlgxObject : PlgxObject
+    public abstract class StringUtf8PlgxObject : PlgxObject
     {
         protected string Data { get; }
 
